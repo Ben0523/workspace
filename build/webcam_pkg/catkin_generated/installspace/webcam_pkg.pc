@@ -1,0 +1,8 @@
+prefix=/workspace/install
+
+Name: webcam_pkg
+Description: Description of webcam_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

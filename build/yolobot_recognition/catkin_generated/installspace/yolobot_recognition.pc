@@ -1,0 +1,8 @@
+prefix=/workspace/install
+
+Name: yolobot_recognition
+Description: Description of yolobot_recognition
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

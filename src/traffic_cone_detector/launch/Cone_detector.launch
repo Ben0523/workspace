@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+	<arg name="rviz_file" default="$(find traffic_cone_detector)/rviz/test.rviz"/>
+	<arg name="conf" default="0.5"/>
+    <arg name="imgsz" default="480"/>
+    <param name="/use_sim_time" value="false"/>
+	
+	<node pkg="traffic_cone_detector" type="cam_and_det_v8.py" name= "yolo_cone_detector" output= "screen">
+		<param name="confidence_threshold" value="$(arg conf)" />
+		<param name="image_size" value="$(arg imgsz)" />
+	</node>
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_file)"/>
+</launch>

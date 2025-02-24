@@ -1,0 +1,8 @@
+prefix=/workspace/install
+
+Name: traffic_cone_detector
+Description: Description of traffic_cone_detector
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

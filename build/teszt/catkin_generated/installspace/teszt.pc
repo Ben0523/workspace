@@ -1,0 +1,8 @@
+prefix=/workspace/install
+
+Name: teszt
+Description: Description of teszt
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
